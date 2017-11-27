@@ -1,0 +1,23 @@
+// Example program
+#include <iostream>
+#include <cstdio>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int i, q;
+    string name;
+    ofstream fout("Program1.txt");
+    cout << "Enter quantity of names:";
+    cin >> q;
+    for (i=0; i<q; i++)
+    {
+        cin >> name;
+        fout << name << endl;
+    }
+    fout.close(); 
+    return 0;
+}
